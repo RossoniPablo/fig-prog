@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <title>FigPRO</title>
+</head>
+
+<body class="bg-WHITE text-BLACKPRIMARY ">
+
+    <div class="bg-cover bg-no-repeat px-4 w-full sm:h-[913px] overflow-hidden "
+        style="background-image: url(./img/bg-paper.png);">
+        <header class="flex justify-between items-center   pt-6 sm:pt-10 sm:max-w-[1170px] sm:mx-auto">
+            <div class=" sm:hidden">
+                <button id="botao" type="button"
+                    class="inline-flex items-center justify-center  hover:rounded-md p-1 hover:bg-YELLOW focus:outline-none transition duration-300 ease-in"
+                    aria-label="Menu" aria-expanded="false">
+                    <img class="w-7 h-9" src="/img/burguer-menu.svg" alt="menu">
+                </button>
+            </div>
+
+            <img class="w-32 sm:w-[167px]" src="./img/logo-header.svg" alt="brand logo">
+
+            <nav class="flex gap-6 text-[#514B4B] font-robotoMono font-medium relative">
+
+                <div class="hidden sm:block">
+                    <div>
+                        <a href="#" class="text-BLACK hover:text-BLACK  font-bold">HOME</a>
+                        <a href="#" class="hover:text-BLACK">ABOUT</a>
+                        <a href="#" class="hover:text-BLACK">EXAMPLES</a>
+                        <a href="#" class="hover:text-BLACK ">CONTACT</a>
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="flex gap-10 text-[#514B4B] text-lg">
+                <i class="fa-solid fa-magnifying-glass "></i>
+                <i class="fa-regular fa-user "></i>
+            </div>
+        </header>
+
+        <div id="menu" class="hidden md:hidden ">
+            <div class="px-2 pt-4 pb-3 sm:px-3 font-robotoMono text-right">
+                <a href="#"
+                    class="hover:bg-YELLOW hover:text-WHITE block px-3 py-2 rounded-md text-base font-medium">HOME</a>
+
+                <a href="#"
+                    class=" hover:bg-YELLOW hover:text-WHITE  block px-3 py-2 rounded-md text-base font-medium">ABOUT</a>
+                <a href="#"
+                    class="hover:bg-YELLOW hover:text-WHITE  block px-3 py-2 rounded-md text-base font-medium">EXAMPLES</a>
+            </div>
+        </div>
+
+
+        <div class="flex mt-14 sm:pt-16 2xl:pt-32 text-center sm:text-start sm:max-w-[1170px] sm:mx-auto  relative">
+            <div class="">
+                <h1 class="text-[73px] sm:text-82xl font-roadRage leading-[72%] sm:max-w-md sm:   ">
+                    <span class="text-GRAY ">Explore the
+                    </span>
+                    Enchanted World
+                </h1>
+                <span class=" text-22xl sm:text-42xl font-rockSalt text-YELLOW ">of Animated Stickers!
+                </span>
+
+                <p
+                    class="text-sm sm:text-base font-robotoMono max-w-2xl mt-10 md:max-w-80 lg:max-w-[526px] text-LIGHTGRAY mb-7 ">
+                    Welcome
+                    to Figpro,
+                    your gateway to a
+                    universe
+                    filled
+                    with magic and
+                    fun! Explore our
+                    exclusive sections and dive into an ocean of creativity.
+                </p>
+                <button
+                    class="flex text-center items-center gap-2 mb-72 sm:mb-[200px] lg:mb-[150px] 2xl:mb-[50px] mx-auto sm:ml-0">
+                    <span class="font-roadRage  text-[22px] sm:text-[40px] text-black "
+                        style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #FCC26B;"> Lets
+                        Go</span>
+                    <img src=" /img/arrow.svg" alt="arrow">
+                </button>
+
+                <div class="flex justify-center pb-4 sm:justify-start">
+                    <div class="flex items-center gap-20 ">
+                        <div class="flex relative">
+                            <img src="/img/left.svg" alt="right icon">
+                            <img src="/img/quite.svg" class="absolute left-8" alt="icon quite">
+                            <img src="/img/right.svg" class="absolute left-16" alt="icon right">
+                        </div>
+
+                        <div class="font-robotoMono">
+                            <strong>+339k Active Users</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="">
+                <img class="sm:hidden top-[271px] -right-32  sm:top-[390px] sm:right-[40%] lg:hidden  absolute"
+                    src="/img/ghost-mobile.svg" alt="ghost version mobile">
+
+                <img class="hidden md:block -right-72 -top-28 md:right-[-334px] absolute" src="/img/ghost.png"
+                    alt="ghost version desktop">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sm:px-2 sm:max-w-[874px] mx-auto pb-20 pt-12">
+        <div class="sm:max-w-[770px] mx-auto mb-4">
+            <p class="text-[13px] sm:text-[16px] sm:w-[700px] mx-auto font-robotoMono text-BLACKPRIMARY text-center">
+                Discover
+                stickers that
+                are true stars
+                in our
+                catalog!
+                Our
+                Featured
+                Section
+                showcases the most incredible
+                and
+                enchanting creations, ready to bring life to your chats and make your conversations even more
+                special.
+            </p>
+
+        </div>
+        <img class="sm:hidden mx-auto" src="/img/numbers-mobile.png" alt="session information">
+        <img class="hidden sm:block" src="/img/numbers.png" alt="session information">
+    </div>
+
+    <div class="pt-8 py-1 bg-gray-100  sm:flex sm:justify-between relative">
+
+        <div class="mb-20 px-4 mx-auto relative">
+            <img class="mx-auto mb-4 block lg:hidden" src="/img/bear-family.png" alt="bear family">
+            <h2
+                class="text-[64px] font-roadRage text-gray-400 top-[77px] -left-14 -rotate-90 sm:text-[84px] sm:bottom-36 sm:-left-[1rem] lg:top-[410px] lg:left-[87px] lg:rotate-1 2xl:-rotate-90 2xl:left-[-97px] 2xl:top-14 absolute">
+                How
+                To
+                use
+            </h2>
+            <ul class="text-center lg:text-start lg:pt-8">
+                <li class="mb-8 ">
+                    <h3 class="font-rockSalt text-[14px] font-bold sm:font-normal sm:text-lg mb-4">1 - Discover the
+                        Enchantment:</h3>
+
+                    <p class="text-[13px] max-w-[500px] font-robotoMono text-gray-500">Join us in three simple steps!
+                        First,
+                        explore
+                        the
+                        Featured
+                        Section and find
+                        the stickers that
+                        captivate you the most.
+                    </p>
+                </li>
+
+                <li class="mb-8">
+                    <h3 class="font-rockSalt text-[14px] font-bold sm:font-normal sm:text-lg mb-4">2 - Connect to the
+                        Magic:</h3>
+
+                    <p class="text-[13px] max-w-[500px] font-robotoMono text-gray-500">Next, click "Explore Now" to
+                        unveil the
+                        story
+                        behind the project in the About the Project Section. Connect to the magic that drives each
+                        unique sticker.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 class="font-rockSalt text-[14px] font-bold sm:font-normal sm:text-lg mb-4">3 - Become Part of
+                        the Tale:</h3>
+
+                    <p class="text-[13px] max-w-[500px] font-robotoMono text-gray-500">Lastly, click "Learn More About
+                        Us" and
+                        embark on the journey of stickers that tell stories. Now, you're ready to become part of
+                        this
+                        enchanting tale. Just follow these steps and register to unlock a world of fun!
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hidden lg:block lg:-top-6 flex-1 max-w-[569px] h-[589px] z-[1]  relative">
+            <img class="top-5 left-4 z-[1] absolute" src="/img/bear01.png" alt="left bear ">
+            <img class="right-7 -top-3 z-[1] absolute" src="/img/bear02.png" alt="bear quite">
+            <img class="z-[2] left-36 bottom-[70px] absolute" src="/img/bear03.png" alt="bear right">
+
+            <div class="bottom-0 left-0 bg-gray-400/30 w-full h-[232px] rounded-[50%] blur-[5.5px] -z-[1] absolute">
+            </div>
+        </div>
+
+        <button
+            class=" w-[176px] inline-flex items-center justify-center gap-4 bg-YELLOW py-[0.9] left-[27%] -bottom-11  hover:bg-BLACKPRIMARY hover:text-WHITE transition-colors duration-300 ease absolute sm:left-[38%]  sm:-bottom-6">
+            <span class="font-roadRage text-[46px] transition-colors duration-300 ease">Lets Start</span>
+            <img class="hover:invert-[1]" src="/img/arrow-black.svg" alt="arrow black">
+        </button>
+    </div>
+
+
+    <div class="max-w-72xl mx-auto h-[900px] py-32 sm:py-28 relative">
+        <div class="text-center ">
+            <h4 class="font-robotoMono text-base sm:text-[22px]  text-[#8E8E8E] font-light mb-6">Stickers that <strong
+                    class="text-YELLOW">Tell</strong>
+            </h4>
+            <h2 class="text-[143px] text-BLACKPRIMARY font-roadRage sm:text-[250px] lg:text-[459px] leading-[0.7]">
+                STORIES</h2>
+        </div>
+
+        <div class="sm:flex sm:items-end sm:gap-14 sm:justify-end  z-10 sm:-mt-[350px] relative">
+            <img class="lg:hidden top-[-390px] left-[67px] sm:top-56 absolute" src="/img/frog-mobile.png"
+                alt="frog version mobile">
+            <img class="hidden lg:block" src="/img/frog.png" alt="sapo version desktop">
+
+            <div class=" mt-[280px] sm:mt-[367px] px-4 text-center sm:pb-[139px] flex-1 max-w-[443px]">
+                <p class=" font-robotoMono text-BLACKPRIMARY leading-[155.3%] mb-4">Each sticker is a small
+                    visual
+                    narrative,
+                    conveying feelings
+                    and
+                    emotions
+                    in every pixel. From funny
+                    expressions to emotional moments, our stickers are more than simple images; they are stories you
+                    can
+                    share with the world.</p>
+
+                <p class="font-robotoMono text-BLACKPRIMARY font-normal leading-[155.3%]">Check out some of our
+                    sticker
+                    gallery to get even more hyped.</p>
+            </div>
+
+            <img class="h-60  right-5 left-[77px] -rotate-[28deg]  sm:h-[518px] sm:bottom-[-348px] lg:left-[480px] lg:bottom-[-130px] lg:h-[300px] lg:rotate-[11deg] 2xl:left-[740px] absolute"
+                src="/img/arrow-img.svg" alt="arrow">
+        </div>
+    </div>
+
+    <div class="py-28 bg-gray-100">
+        <div class="text-center lg:max-w-[45rem] pb-36 sm:bb-52 relative mx-auto">
+            <span
+                class=" font-rockSalt text-YELLOW text-[25px] left-3 -top-6 sm:left-4 sm:-top-3 -rotate-[8deg] sm:-rotate-[9deg] absolute">SOME</span>
+            <h2
+                class="flex items-center gap-5  text-BLACKPRIMARY font-roadRage text-[120px] sm:text-[240px] pl-[11px] leading-[0.7] tracking-[12px] max-w-[437px] ">
+                <span class="text-center items-center mx-auto">STICK</span>
+                <img class="absolute left-[200px] sm:left-[380px]" src="/img/ghost-text.svg"
+                    alt="ghost in the middle of the text">
+                <span class="text-center items-center mx-auto">RS</span>
+            </h2>
+        </div>
+
+        <div
+            class="max-w-[378px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:gap-x-[21px] gap-y-[147px] w-full sm:max-w-[1152px] sm:mx-auto">
+
+            <div class="  w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+                <div
+                    class="flex  flex-col items-center px-5  border border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs01.png" alt="stickrs 1">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            little
+                            tay
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+                <div
+                    class="flex flex-col items-center px-5  border border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs02.png" alt="stickrs 2">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            little
+                            fiona
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+                <div
+                    class="flex flex-col items-center px-5  border border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs03.png" alt="stickrs 3">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            little
+                            Ghost
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center px-5 border border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs04.png" alt="stickrs 4">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3  text-BLACKPRIMARY uppercase">
+                            Bear
+                            leo
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center border px-5 border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs05.png" alt="stickrs 5">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            tust
+                            fisu
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center border px-5 border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs06.png" alt="stickrs 6">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            Bear
+                            fire
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center border px-5 border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs07.png" alt="stickrs 7">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            Bartolomeo
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center border px-5 border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs08.png" alt="stickrs 8">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">
+                            Ni-rot
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[378px] h-[412px] rounded-[20px] p-1 border border-YELLOW">
+
+                <div
+                    class="flex flex-col items-center border px-5 border-[#D9D9D9] rounded-[20px] bg-[#EEE] w-full h-full ">
+                    <div class="w-full max-w-[206px] h-[267px] flex items-end justify-center -mt-24 mb-[9px]">
+                        <img src="/img/stickrs09.png" alt="stickrs 9">
+                    </div>
+
+                    <div class="max-w-[332px] text-center mb-3">
+                        <h3 class="font-roadRage text-[41px] leading-[0.7] mb-7 lg:mb-3 text-BLACKPRIMARY uppercase">own
+                            *-*
+                        </h3>
+                        <p class="font-robotoMono text-sm text-[#5D5D5D] text-justify">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Nullam dapibus
+                            orci eu eros semper
+                            elementum. Sed sollicitudin erat non ipsum dignissim iaculis.</p>
+                    </div>
+
+                    <ul class="flex gap-5">
+                        <li>
+                            <a href="">
+                                <img src="/img/dollar-stickrs.svg" alt="Cash">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/heart-stickrs.svg" alt="Heart">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <img src="/img/user-stickrs.svg" alt="User">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-28 pb-32 h-[1180px] bg-no-repeat bg-bottom 2xl:bg-cover overflow-hidden relative"
+        style="background-image: url(./img/bg-word.png);">
+        <div class=" text-center relative">
+            <div class="mb-14">
+                <h2
+                    class="font-roadRage text-[176px] sm:text-[320px] lg:text-[431px] text-BLACKPRIMARY leading-[0.7] tracking-[6%] mb-7">
+                    WORLD
+                </h2>
+                <span
+                    class="font-robotoMono text-YELLOW text-[20px] sm:text-[25px] font-medium tracking-[5.75px] leading-[155%] uppercase">of
+                    possibility</span>
+            </div>
+
+            <p
+                class="text-[13px] px-11 max-w-[359px] 2xl:max-w-[588px] sm:max-w-[500px] mx-auto sm:text-[16px]  text-[#9C9C9C] font-normal mb-16 leading-[155.3%]">
+                Turn
+                your
+                <strong>creativity</strong> into unique
+                stickers! <strong>Sign
+                    up</strong> now on
+                our website,
+                create, buy,
+                and
+                sell your own
+                sticker designs. The collector's community is <strong>waiting</strong> for you!
+            </p>
+            <button
+                class="sm:hidden inline-flex items-center justify-center gap-4 bg-YELLOW py-[0.9] px-12 hover:bg-BLACKPRIMARY hover:text-WHITE transition-colors duration-300 ease">
+                <span class="font-roadRage text-[46px] transition-colors duration-300 ease">Lets Start</span>
+                <img class="hover:invert-[1]" src="/img/arrow-black.svg" alt="arrow black">
+            </button>
+
+            <button
+                class="hidden sm:inline-flex items-center justify-center gap-4 bg-YELLOW py-[0.9] px-12 hover:bg-BLACKPRIMARY hover:text-WHITE transition-colors duration-300 ease">
+                <span class="font-roadRage text-[46px] transition-colors duration-300 ease">Sign Up</span>
+                <img class="hover:invert-[1]" src="/img/arrow-black.svg" alt="arrow black">
+            </button>
+        </div>
+
+        <img class=" h-[387px] 2xl:h-[576px] 2xl:w-[496px] bottom-[200px] md:top-0 left-[-56px] xl:left-[-104px] lg:top-[0px]  2xl:-top-5 2xl:-left-14 absolute"
+            src="/img/hawk.png" alt="Hawk">
+
+        <img class="h-[388px] 2xl:h-[649px] bottom-[60px] left-[-8px] md:top-[190px] lg:top-[150px] xl:top-[210px] 2xl:bottom-[380px] pointer-events-none absolute"
+            src="/img/tiger.png" alt="Tiger">
+
+
+        <img class="h-[381px] 2xl:h-[672px] right-0 sm:-bottom-[-210px] md:top-0 xl:top-0 2xl:top-[-30px]  absolute"
+            src="/img/octopus.png" alt="Octopus">
+        <img class="h-[354px] 2xl:h-[624px]  bottom-[100px] right-0 pointer-events-none md:top-[190px]  xl:bottom-[290px] 2xl:bottom-[320px] absolute"
+            src="/img/owl.png" alt="Owl">
+    </div>
+
+    <footer class="bg-BLACK pt-12 pb-14 px-4 ">
+        <div class="px-1 sm:max-w-[1170px] mx-auto">
+            <div class="flex flex-col text-center sm:text-start  sm:flex-row sm:justify-between">
+                <div>
+                    <img class="block sm:hidden mx-auto pb-4 " src="/img/logo-footer-mobile.svg"
+                        alt="Logo footer version mobile">
+                    <h2 class="text-WHITE font-robotoMono font-bold text-[30px] mb-4 hidden sm:block">FIG</h2>
+                    <p
+                        class="max-w-[361px] mx-auto sm:max-w-[600px] font-robotoMono text-[13px] sm:text-[15px] text-[#9C9C9C] leading-[155.3%] pb-4">
+                        With over
+                        500,000
+                        active users
+                        worldwide, turning
+                        creativity into collectibles. Unleash your imagination
+                        with FigPro!</p>
+                </div>
+
+                <div class="flex flex-col justify-center pb-4">
+                    <h2
+                        class="text-WHITE/80 sm:text-WHITE text-[16px] sm:text-[18px]  font-bold tracking-[9%] leading-[155.3%] uppercase mb-4">
+                        our
+                        networks
+                    </h2>
+                    <div class="flex items-center justify-center">
+                        <a class="font-robotoMono text-[15px] text-[#9C9C9C] hover:text-WHITE transition duration-300 ease-in-out"
+                            href="#">INSTAGRAM</a>
+                        <div class="w-[2px] h-4 bg-[#9C9C9C]  mx-4"></div>
+                        <a class="font-robotoMono text-[15px] text-[#9C9C9C] hover:text-WHITE transition duration-300 ease-in-out"
+                            href="#">TWITTER</a>
+                        <div class="w-[2px] h-4 bg-[#9C9C9C] mx-4"></div>
+                        <a class="font-robotoMono text-[15px] text-[#9C9C9C] hover:text-WHITE transition duration-300 ease-in-out"
+                            href="#">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[100%] h-[1px] my-10 bg-[#282828]"></div>
+
+            <div class="flex flex-col items-center gap-3 sm:gap-0 sm:flex-row sm:justify-between">
+                <div>
+                    <h3 class="font-robotoMono text-[15px] text-[#5C5C5C]">©2024 Inc. All rights reserved.</h3>
+                </div>
+                <div>
+                    <h3 class="font-robotoMono text-[15px] text-[#5C5C5C]">{} Website developed by ebrian.com.br
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
