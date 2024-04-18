@@ -18,7 +18,7 @@ https://fig-pro-orpin.vercel.app/
 
 <br>
 
-## 🚀 Tecnologias
+## 💻 Tecnologias
 Projeto  desenvolvido com as seguintes tecnologias:
 
 - HTML
@@ -28,7 +28,7 @@ Projeto  desenvolvido com as seguintes tecnologias:
 
 <br>
 
-## 🚀 Inspiração 
+## 💡 Inspiração 
 - Crédito ao criador do designer
 - Link figma: https://www.figma.com/file/sfknwWFWB6DF3Kd9RrfTMQ/Figpro?type=design&node-id=0-1&mode=design&t=P4DOASOz5vyvuNeA-0
 ---
